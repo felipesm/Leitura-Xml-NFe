@@ -1,0 +1,8 @@
+E:\Desenvolvimento\SerializarXml\SerializarXml\bin\Debug\SerializarXml.exe
+E:\Desenvolvimento\SerializarXml\SerializarXml\bin\Debug\SerializarXml.pdb
+E:\Desenvolvimento\SerializarXml\SerializarXml\obj\Debug\SerializarXml.csprojResolveAssemblyReference.cache
+E:\Desenvolvimento\SerializarXml\SerializarXml\obj\Debug\SerializarXml.Properties.Resources.resources
+E:\Desenvolvimento\SerializarXml\SerializarXml\obj\Debug\SerializarXml.csproj.GenerateResource.Cache
+E:\Desenvolvimento\SerializarXml\SerializarXml\obj\Debug\SerializarXml.exe
+E:\Desenvolvimento\SerializarXml\SerializarXml\obj\Debug\SerializarXml.pdb
+E:\Desenvolvimento\SerializarXml\SerializarXml\obj\Debug\SerializarXml.frmSerializarXml.resources
