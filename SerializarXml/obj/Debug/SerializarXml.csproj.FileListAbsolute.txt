@@ -6,3 +6,11 @@ E:\Desenvolvimento\SerializarXml\SerializarXml\obj\Debug\SerializarXml.csproj.Ge
 E:\Desenvolvimento\SerializarXml\SerializarXml\obj\Debug\SerializarXml.exe
 E:\Desenvolvimento\SerializarXml\SerializarXml\obj\Debug\SerializarXml.pdb
 E:\Desenvolvimento\SerializarXml\SerializarXml\obj\Debug\SerializarXml.frmSerializarXml.resources
+C:\Users\Felipe\Fontes\Leitura-Xml-NFe\SerializarXml\obj\Debug\SerializarXml.exe
+C:\Users\Felipe\Fontes\Leitura-Xml-NFe\SerializarXml\obj\Debug\SerializarXml.pdb
+C:\Users\Felipe\Fontes\Leitura-Xml-NFe\SerializarXml\bin\Debug\SerializarXml.exe
+C:\Users\Felipe\Fontes\Leitura-Xml-NFe\SerializarXml\bin\Debug\SerializarXml.pdb
+C:\Users\Felipe\Fontes\Leitura-Xml-NFe\SerializarXml\obj\Debug\SerializarXml.csprojResolveAssemblyReference.cache
+C:\Users\Felipe\Fontes\Leitura-Xml-NFe\SerializarXml\obj\Debug\SerializarXml.frmSerializarXml.resources
+C:\Users\Felipe\Fontes\Leitura-Xml-NFe\SerializarXml\obj\Debug\SerializarXml.Properties.Resources.resources
+C:\Users\Felipe\Fontes\Leitura-Xml-NFe\SerializarXml\obj\Debug\SerializarXml.csproj.GenerateResource.Cache
