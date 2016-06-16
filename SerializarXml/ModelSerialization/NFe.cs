@@ -18,6 +18,9 @@ namespace SerializarXml.ModelSerialization
 
             [XmlElement("emit")]
             public Emitente Emitente { get; set; }
+
+            [XmlElement("dest")]
+            public Destinatario Destinatario { get; set; }
         }
     }
 }

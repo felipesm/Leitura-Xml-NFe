@@ -50,6 +50,7 @@
     <Compile Include="frmSerializarXml.Designer.cs">
       <DependentUpon>frmSerializarXml.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModelSerialization\Destinatario.cs" />
     <Compile Include="ModelSerialization\Emitente.cs" />
     <Compile Include="ModelSerialization\Endereco.cs" />
     <Compile Include="ModelSerialization\Identificacao.cs" />

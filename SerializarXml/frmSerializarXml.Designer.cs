@@ -62,11 +62,33 @@
             this.lblNomeFantasia = new System.Windows.Forms.Label();
             this.txtRazaoSocial = new System.Windows.Forms.TextBox();
             this.lblRazaoSocial = new System.Windows.Forms.Label();
+            this.tbDestinatario = new System.Windows.Forms.TabPage();
+            this.gbEnderecoDestinatario = new System.Windows.Forms.GroupBox();
+            this.txtDestUF = new System.Windows.Forms.TextBox();
+            this.lblDestUF = new System.Windows.Forms.Label();
+            this.txtDestMunicipio = new System.Windows.Forms.TextBox();
+            this.lblDestMunicipio = new System.Windows.Forms.Label();
+            this.txtDestNumero = new System.Windows.Forms.TextBox();
+            this.lblDestNumero = new System.Windows.Forms.Label();
+            this.txtDestLogradouro = new System.Windows.Forms.TextBox();
+            this.lblDestLogradouro = new System.Windows.Forms.Label();
+            this.txtDestCpfCnpj = new System.Windows.Forms.TextBox();
+            this.lblDestCpfCnpj = new System.Windows.Forms.Label();
+            this.txtDestNomeFantasia = new System.Windows.Forms.TextBox();
+            this.lblDestNomeFantasia = new System.Windows.Forms.Label();
             this.lblArquivoXml = new System.Windows.Forms.Label();
+            this.txtDestEmail = new System.Windows.Forms.TextBox();
+            this.lblDestEmail = new System.Windows.Forms.Label();
+            this.txtDestCEP = new System.Windows.Forms.TextBox();
+            this.lblDestCEP = new System.Windows.Forms.Label();
+            this.txtDestBairro = new System.Windows.Forms.TextBox();
+            this.lblDestBairro = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tbIdentificacao.SuspendLayout();
             this.tbEmitente.SuspendLayout();
             this.gbEnderecoEmitente.SuspendLayout();
+            this.tbDestinatario.SuspendLayout();
+            this.gbEnderecoDestinatario.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtpathXml
@@ -101,6 +123,7 @@
             // 
             this.tabControl1.Controls.Add(this.tbIdentificacao);
             this.tabControl1.Controls.Add(this.tbEmitente);
+            this.tabControl1.Controls.Add(this.tbDestinatario);
             this.tabControl1.Location = new System.Drawing.Point(55, 77);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -422,6 +445,164 @@
             this.lblRazaoSocial.TabIndex = 2;
             this.lblRazaoSocial.Text = "Razão Social";
             // 
+            // tbDestinatario
+            // 
+            this.tbDestinatario.Controls.Add(this.txtDestEmail);
+            this.tbDestinatario.Controls.Add(this.lblDestEmail);
+            this.tbDestinatario.Controls.Add(this.gbEnderecoDestinatario);
+            this.tbDestinatario.Controls.Add(this.txtDestCpfCnpj);
+            this.tbDestinatario.Controls.Add(this.lblDestCpfCnpj);
+            this.tbDestinatario.Controls.Add(this.txtDestNomeFantasia);
+            this.tbDestinatario.Controls.Add(this.lblDestNomeFantasia);
+            this.tbDestinatario.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDestinatario.Location = new System.Drawing.Point(4, 22);
+            this.tbDestinatario.Name = "tbDestinatario";
+            this.tbDestinatario.Padding = new System.Windows.Forms.Padding(3);
+            this.tbDestinatario.Size = new System.Drawing.Size(394, 269);
+            this.tbDestinatario.TabIndex = 2;
+            this.tbDestinatario.Text = "Destinatário";
+            this.tbDestinatario.UseVisualStyleBackColor = true;
+            // 
+            // gbEnderecoDestinatario
+            // 
+            this.gbEnderecoDestinatario.Controls.Add(this.txtDestBairro);
+            this.gbEnderecoDestinatario.Controls.Add(this.lblDestBairro);
+            this.gbEnderecoDestinatario.Controls.Add(this.txtDestCEP);
+            this.gbEnderecoDestinatario.Controls.Add(this.lblDestCEP);
+            this.gbEnderecoDestinatario.Controls.Add(this.txtDestUF);
+            this.gbEnderecoDestinatario.Controls.Add(this.lblDestUF);
+            this.gbEnderecoDestinatario.Controls.Add(this.txtDestMunicipio);
+            this.gbEnderecoDestinatario.Controls.Add(this.lblDestMunicipio);
+            this.gbEnderecoDestinatario.Controls.Add(this.txtDestNumero);
+            this.gbEnderecoDestinatario.Controls.Add(this.lblDestNumero);
+            this.gbEnderecoDestinatario.Controls.Add(this.txtDestLogradouro);
+            this.gbEnderecoDestinatario.Controls.Add(this.lblDestLogradouro);
+            this.gbEnderecoDestinatario.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbEnderecoDestinatario.Location = new System.Drawing.Point(12, 97);
+            this.gbEnderecoDestinatario.Name = "gbEnderecoDestinatario";
+            this.gbEnderecoDestinatario.Size = new System.Drawing.Size(370, 156);
+            this.gbEnderecoDestinatario.TabIndex = 11;
+            this.gbEnderecoDestinatario.TabStop = false;
+            this.gbEnderecoDestinatario.Text = "Endereço";
+            // 
+            // txtDestUF
+            // 
+            this.txtDestUF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDestUF.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDestUF.Location = new System.Drawing.Point(298, 75);
+            this.txtDestUF.Name = "txtDestUF";
+            this.txtDestUF.ReadOnly = true;
+            this.txtDestUF.Size = new System.Drawing.Size(55, 22);
+            this.txtDestUF.TabIndex = 15;
+            // 
+            // lblDestUF
+            // 
+            this.lblDestUF.AutoSize = true;
+            this.lblDestUF.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDestUF.Location = new System.Drawing.Point(295, 59);
+            this.lblDestUF.Name = "lblDestUF";
+            this.lblDestUF.Size = new System.Drawing.Size(21, 13);
+            this.lblDestUF.TabIndex = 14;
+            this.lblDestUF.Text = "UF";
+            // 
+            // txtDestMunicipio
+            // 
+            this.txtDestMunicipio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDestMunicipio.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDestMunicipio.Location = new System.Drawing.Point(11, 75);
+            this.txtDestMunicipio.Name = "txtDestMunicipio";
+            this.txtDestMunicipio.ReadOnly = true;
+            this.txtDestMunicipio.Size = new System.Drawing.Size(277, 22);
+            this.txtDestMunicipio.TabIndex = 13;
+            // 
+            // lblDestMunicipio
+            // 
+            this.lblDestMunicipio.AutoSize = true;
+            this.lblDestMunicipio.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDestMunicipio.Location = new System.Drawing.Point(8, 59);
+            this.lblDestMunicipio.Name = "lblDestMunicipio";
+            this.lblDestMunicipio.Size = new System.Drawing.Size(60, 13);
+            this.lblDestMunicipio.TabIndex = 12;
+            this.lblDestMunicipio.Text = "Município";
+            // 
+            // txtDestNumero
+            // 
+            this.txtDestNumero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDestNumero.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDestNumero.Location = new System.Drawing.Point(298, 34);
+            this.txtDestNumero.Name = "txtDestNumero";
+            this.txtDestNumero.ReadOnly = true;
+            this.txtDestNumero.Size = new System.Drawing.Size(55, 22);
+            this.txtDestNumero.TabIndex = 11;
+            // 
+            // lblDestNumero
+            // 
+            this.lblDestNumero.AutoSize = true;
+            this.lblDestNumero.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDestNumero.Location = new System.Drawing.Point(295, 18);
+            this.lblDestNumero.Name = "lblDestNumero";
+            this.lblDestNumero.Size = new System.Drawing.Size(50, 13);
+            this.lblDestNumero.TabIndex = 10;
+            this.lblDestNumero.Text = "Número";
+            // 
+            // txtDestLogradouro
+            // 
+            this.txtDestLogradouro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDestLogradouro.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDestLogradouro.Location = new System.Drawing.Point(11, 34);
+            this.txtDestLogradouro.Name = "txtDestLogradouro";
+            this.txtDestLogradouro.ReadOnly = true;
+            this.txtDestLogradouro.Size = new System.Drawing.Size(277, 22);
+            this.txtDestLogradouro.TabIndex = 9;
+            // 
+            // lblDestLogradouro
+            // 
+            this.lblDestLogradouro.AutoSize = true;
+            this.lblDestLogradouro.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDestLogradouro.Location = new System.Drawing.Point(8, 18);
+            this.lblDestLogradouro.Name = "lblDestLogradouro";
+            this.lblDestLogradouro.Size = new System.Drawing.Size(69, 13);
+            this.lblDestLogradouro.TabIndex = 8;
+            this.lblDestLogradouro.Text = "Logradouro";
+            // 
+            // txtDestCpfCnpj
+            // 
+            this.txtDestCpfCnpj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDestCpfCnpj.Location = new System.Drawing.Point(11, 69);
+            this.txtDestCpfCnpj.Name = "txtDestCpfCnpj";
+            this.txtDestCpfCnpj.ReadOnly = true;
+            this.txtDestCpfCnpj.Size = new System.Drawing.Size(131, 22);
+            this.txtDestCpfCnpj.TabIndex = 9;
+            // 
+            // lblDestCpfCnpj
+            // 
+            this.lblDestCpfCnpj.AutoSize = true;
+            this.lblDestCpfCnpj.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDestCpfCnpj.Location = new System.Drawing.Point(8, 53);
+            this.lblDestCpfCnpj.Name = "lblDestCpfCnpj";
+            this.lblDestCpfCnpj.Size = new System.Drawing.Size(59, 13);
+            this.lblDestCpfCnpj.TabIndex = 8;
+            this.lblDestCpfCnpj.Text = "CPF/CNPJ";
+            // 
+            // txtDestNomeFantasia
+            // 
+            this.txtDestNomeFantasia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDestNomeFantasia.Location = new System.Drawing.Point(11, 25);
+            this.txtDestNomeFantasia.Name = "txtDestNomeFantasia";
+            this.txtDestNomeFantasia.ReadOnly = true;
+            this.txtDestNomeFantasia.Size = new System.Drawing.Size(370, 22);
+            this.txtDestNomeFantasia.TabIndex = 5;
+            // 
+            // lblDestNomeFantasia
+            // 
+            this.lblDestNomeFantasia.AutoSize = true;
+            this.lblDestNomeFantasia.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDestNomeFantasia.Location = new System.Drawing.Point(8, 9);
+            this.lblDestNomeFantasia.Name = "lblDestNomeFantasia";
+            this.lblDestNomeFantasia.Size = new System.Drawing.Size(85, 13);
+            this.lblDestNomeFantasia.TabIndex = 4;
+            this.lblDestNomeFantasia.Text = "Nome Fantasia";
+            // 
             // lblArquivoXml
             // 
             this.lblArquivoXml.AutoSize = true;
@@ -431,6 +612,65 @@
             this.lblArquivoXml.Size = new System.Drawing.Size(238, 13);
             this.lblArquivoXml.TabIndex = 10;
             this.lblArquivoXml.Text = "Informe o documento eletrônico para leitura";
+            // 
+            // txtDestEmail
+            // 
+            this.txtDestEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDestEmail.Location = new System.Drawing.Point(151, 69);
+            this.txtDestEmail.Name = "txtDestEmail";
+            this.txtDestEmail.ReadOnly = true;
+            this.txtDestEmail.Size = new System.Drawing.Size(230, 22);
+            this.txtDestEmail.TabIndex = 13;
+            // 
+            // lblDestEmail
+            // 
+            this.lblDestEmail.AutoSize = true;
+            this.lblDestEmail.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDestEmail.Location = new System.Drawing.Point(148, 53);
+            this.lblDestEmail.Name = "lblDestEmail";
+            this.lblDestEmail.Size = new System.Drawing.Size(40, 13);
+            this.lblDestEmail.TabIndex = 12;
+            this.lblDestEmail.Text = "E-Mail";
+            // 
+            // txtDestCEP
+            // 
+            this.txtDestCEP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDestCEP.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDestCEP.Location = new System.Drawing.Point(11, 116);
+            this.txtDestCEP.Name = "txtDestCEP";
+            this.txtDestCEP.ReadOnly = true;
+            this.txtDestCEP.Size = new System.Drawing.Size(119, 22);
+            this.txtDestCEP.TabIndex = 17;
+            // 
+            // lblDestCEP
+            // 
+            this.lblDestCEP.AutoSize = true;
+            this.lblDestCEP.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDestCEP.Location = new System.Drawing.Point(8, 100);
+            this.lblDestCEP.Name = "lblDestCEP";
+            this.lblDestCEP.Size = new System.Drawing.Size(27, 13);
+            this.lblDestCEP.TabIndex = 16;
+            this.lblDestCEP.Text = "CEP";
+            // 
+            // txtDestBairro
+            // 
+            this.txtDestBairro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDestBairro.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDestBairro.Location = new System.Drawing.Point(139, 116);
+            this.txtDestBairro.Name = "txtDestBairro";
+            this.txtDestBairro.ReadOnly = true;
+            this.txtDestBairro.Size = new System.Drawing.Size(214, 22);
+            this.txtDestBairro.TabIndex = 19;
+            // 
+            // lblDestBairro
+            // 
+            this.lblDestBairro.AutoSize = true;
+            this.lblDestBairro.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDestBairro.Location = new System.Drawing.Point(136, 100);
+            this.lblDestBairro.Name = "lblDestBairro";
+            this.lblDestBairro.Size = new System.Drawing.Size(38, 13);
+            this.lblDestBairro.TabIndex = 18;
+            this.lblDestBairro.Text = "Bairro";
             // 
             // frmSerializarXml
             // 
@@ -452,6 +692,10 @@
             this.tbEmitente.PerformLayout();
             this.gbEnderecoEmitente.ResumeLayout(false);
             this.gbEnderecoEmitente.PerformLayout();
+            this.tbDestinatario.ResumeLayout(false);
+            this.tbDestinatario.PerformLayout();
+            this.gbEnderecoDestinatario.ResumeLayout(false);
+            this.gbEnderecoDestinatario.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -493,6 +737,26 @@
         private System.Windows.Forms.TextBox txtUFEmitente;
         private System.Windows.Forms.Label lblUFEmitente;
         private System.Windows.Forms.Label lblArquivoXml;
+        private System.Windows.Forms.TabPage tbDestinatario;
+        private System.Windows.Forms.TextBox txtDestNomeFantasia;
+        private System.Windows.Forms.Label lblDestNomeFantasia;
+        private System.Windows.Forms.TextBox txtDestCpfCnpj;
+        private System.Windows.Forms.Label lblDestCpfCnpj;
+        private System.Windows.Forms.GroupBox gbEnderecoDestinatario;
+        private System.Windows.Forms.TextBox txtDestUF;
+        private System.Windows.Forms.Label lblDestUF;
+        private System.Windows.Forms.TextBox txtDestMunicipio;
+        private System.Windows.Forms.Label lblDestMunicipio;
+        private System.Windows.Forms.TextBox txtDestNumero;
+        private System.Windows.Forms.Label lblDestNumero;
+        private System.Windows.Forms.TextBox txtDestLogradouro;
+        private System.Windows.Forms.Label lblDestLogradouro;
+        private System.Windows.Forms.TextBox txtDestEmail;
+        private System.Windows.Forms.Label lblDestEmail;
+        private System.Windows.Forms.TextBox txtDestBairro;
+        private System.Windows.Forms.Label lblDestBairro;
+        private System.Windows.Forms.TextBox txtDestCEP;
+        private System.Windows.Forms.Label lblDestCEP;
     }
 }
 
