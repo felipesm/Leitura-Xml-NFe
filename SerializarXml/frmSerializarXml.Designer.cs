@@ -63,7 +63,13 @@
             this.txtRazaoSocial = new System.Windows.Forms.TextBox();
             this.lblRazaoSocial = new System.Windows.Forms.Label();
             this.tbDestinatario = new System.Windows.Forms.TabPage();
+            this.txtDestEmail = new System.Windows.Forms.TextBox();
+            this.lblDestEmail = new System.Windows.Forms.Label();
             this.gbEnderecoDestinatario = new System.Windows.Forms.GroupBox();
+            this.txtDestBairro = new System.Windows.Forms.TextBox();
+            this.lblDestBairro = new System.Windows.Forms.Label();
+            this.txtDestCEP = new System.Windows.Forms.TextBox();
+            this.lblDestCEP = new System.Windows.Forms.Label();
             this.txtDestUF = new System.Windows.Forms.TextBox();
             this.lblDestUF = new System.Windows.Forms.Label();
             this.txtDestMunicipio = new System.Windows.Forms.TextBox();
@@ -77,12 +83,7 @@
             this.txtDestNomeFantasia = new System.Windows.Forms.TextBox();
             this.lblDestNomeFantasia = new System.Windows.Forms.Label();
             this.lblArquivoXml = new System.Windows.Forms.Label();
-            this.txtDestEmail = new System.Windows.Forms.TextBox();
-            this.lblDestEmail = new System.Windows.Forms.Label();
-            this.txtDestCEP = new System.Windows.Forms.TextBox();
-            this.lblDestCEP = new System.Windows.Forms.Label();
-            this.txtDestBairro = new System.Windows.Forms.TextBox();
-            this.lblDestBairro = new System.Windows.Forms.Label();
+            this.tbItens = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tbIdentificacao.SuspendLayout();
             this.tbEmitente.SuspendLayout();
@@ -104,7 +105,7 @@
             // openFileXml
             // 
             this.openFileXml.FileName = "openFileDialog1";
-            this.openFileXml.Filter = ".xml|";
+            this.openFileXml.Filter = "Arquivo Xml|*.xml";
             this.openFileXml.Title = "Abrir Nota Fiscal";
             // 
             // btnLerXml
@@ -124,6 +125,7 @@
             this.tabControl1.Controls.Add(this.tbIdentificacao);
             this.tabControl1.Controls.Add(this.tbEmitente);
             this.tabControl1.Controls.Add(this.tbDestinatario);
+            this.tabControl1.Controls.Add(this.tbItens);
             this.tabControl1.Location = new System.Drawing.Point(55, 77);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -463,6 +465,25 @@
             this.tbDestinatario.Text = "Destinatário";
             this.tbDestinatario.UseVisualStyleBackColor = true;
             // 
+            // txtDestEmail
+            // 
+            this.txtDestEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDestEmail.Location = new System.Drawing.Point(151, 69);
+            this.txtDestEmail.Name = "txtDestEmail";
+            this.txtDestEmail.ReadOnly = true;
+            this.txtDestEmail.Size = new System.Drawing.Size(230, 22);
+            this.txtDestEmail.TabIndex = 13;
+            // 
+            // lblDestEmail
+            // 
+            this.lblDestEmail.AutoSize = true;
+            this.lblDestEmail.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDestEmail.Location = new System.Drawing.Point(148, 53);
+            this.lblDestEmail.Name = "lblDestEmail";
+            this.lblDestEmail.Size = new System.Drawing.Size(40, 13);
+            this.lblDestEmail.TabIndex = 12;
+            this.lblDestEmail.Text = "E-Mail";
+            // 
             // gbEnderecoDestinatario
             // 
             this.gbEnderecoDestinatario.Controls.Add(this.txtDestBairro);
@@ -484,6 +505,46 @@
             this.gbEnderecoDestinatario.TabIndex = 11;
             this.gbEnderecoDestinatario.TabStop = false;
             this.gbEnderecoDestinatario.Text = "Endereço";
+            // 
+            // txtDestBairro
+            // 
+            this.txtDestBairro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDestBairro.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDestBairro.Location = new System.Drawing.Point(139, 116);
+            this.txtDestBairro.Name = "txtDestBairro";
+            this.txtDestBairro.ReadOnly = true;
+            this.txtDestBairro.Size = new System.Drawing.Size(214, 22);
+            this.txtDestBairro.TabIndex = 19;
+            // 
+            // lblDestBairro
+            // 
+            this.lblDestBairro.AutoSize = true;
+            this.lblDestBairro.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDestBairro.Location = new System.Drawing.Point(136, 100);
+            this.lblDestBairro.Name = "lblDestBairro";
+            this.lblDestBairro.Size = new System.Drawing.Size(38, 13);
+            this.lblDestBairro.TabIndex = 18;
+            this.lblDestBairro.Text = "Bairro";
+            // 
+            // txtDestCEP
+            // 
+            this.txtDestCEP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDestCEP.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDestCEP.Location = new System.Drawing.Point(11, 116);
+            this.txtDestCEP.Name = "txtDestCEP";
+            this.txtDestCEP.ReadOnly = true;
+            this.txtDestCEP.Size = new System.Drawing.Size(119, 22);
+            this.txtDestCEP.TabIndex = 17;
+            // 
+            // lblDestCEP
+            // 
+            this.lblDestCEP.AutoSize = true;
+            this.lblDestCEP.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDestCEP.Location = new System.Drawing.Point(8, 100);
+            this.lblDestCEP.Name = "lblDestCEP";
+            this.lblDestCEP.Size = new System.Drawing.Size(27, 13);
+            this.lblDestCEP.TabIndex = 16;
+            this.lblDestCEP.Text = "CEP";
             // 
             // txtDestUF
             // 
@@ -613,64 +674,15 @@
             this.lblArquivoXml.TabIndex = 10;
             this.lblArquivoXml.Text = "Informe o documento eletrônico para leitura";
             // 
-            // txtDestEmail
+            // tbItens
             // 
-            this.txtDestEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDestEmail.Location = new System.Drawing.Point(151, 69);
-            this.txtDestEmail.Name = "txtDestEmail";
-            this.txtDestEmail.ReadOnly = true;
-            this.txtDestEmail.Size = new System.Drawing.Size(230, 22);
-            this.txtDestEmail.TabIndex = 13;
-            // 
-            // lblDestEmail
-            // 
-            this.lblDestEmail.AutoSize = true;
-            this.lblDestEmail.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDestEmail.Location = new System.Drawing.Point(148, 53);
-            this.lblDestEmail.Name = "lblDestEmail";
-            this.lblDestEmail.Size = new System.Drawing.Size(40, 13);
-            this.lblDestEmail.TabIndex = 12;
-            this.lblDestEmail.Text = "E-Mail";
-            // 
-            // txtDestCEP
-            // 
-            this.txtDestCEP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDestCEP.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDestCEP.Location = new System.Drawing.Point(11, 116);
-            this.txtDestCEP.Name = "txtDestCEP";
-            this.txtDestCEP.ReadOnly = true;
-            this.txtDestCEP.Size = new System.Drawing.Size(119, 22);
-            this.txtDestCEP.TabIndex = 17;
-            // 
-            // lblDestCEP
-            // 
-            this.lblDestCEP.AutoSize = true;
-            this.lblDestCEP.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDestCEP.Location = new System.Drawing.Point(8, 100);
-            this.lblDestCEP.Name = "lblDestCEP";
-            this.lblDestCEP.Size = new System.Drawing.Size(27, 13);
-            this.lblDestCEP.TabIndex = 16;
-            this.lblDestCEP.Text = "CEP";
-            // 
-            // txtDestBairro
-            // 
-            this.txtDestBairro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDestBairro.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDestBairro.Location = new System.Drawing.Point(139, 116);
-            this.txtDestBairro.Name = "txtDestBairro";
-            this.txtDestBairro.ReadOnly = true;
-            this.txtDestBairro.Size = new System.Drawing.Size(214, 22);
-            this.txtDestBairro.TabIndex = 19;
-            // 
-            // lblDestBairro
-            // 
-            this.lblDestBairro.AutoSize = true;
-            this.lblDestBairro.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDestBairro.Location = new System.Drawing.Point(136, 100);
-            this.lblDestBairro.Name = "lblDestBairro";
-            this.lblDestBairro.Size = new System.Drawing.Size(38, 13);
-            this.lblDestBairro.TabIndex = 18;
-            this.lblDestBairro.Text = "Bairro";
+            this.tbItens.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbItens.Location = new System.Drawing.Point(4, 22);
+            this.tbItens.Name = "tbItens";
+            this.tbItens.Size = new System.Drawing.Size(394, 269);
+            this.tbItens.TabIndex = 3;
+            this.tbItens.Text = "Itens";
+            this.tbItens.UseVisualStyleBackColor = true;
             // 
             // frmSerializarXml
             // 
@@ -681,7 +693,10 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.btnLerXml);
             this.Controls.Add(this.txtpathXml);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmSerializarXml";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ler NFe/NFC-e";
@@ -757,6 +772,7 @@
         private System.Windows.Forms.Label lblDestBairro;
         private System.Windows.Forms.TextBox txtDestCEP;
         private System.Windows.Forms.Label lblDestCEP;
+        private System.Windows.Forms.TabPage tbItens;
     }
 }
 

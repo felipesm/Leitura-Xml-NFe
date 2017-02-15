@@ -21,6 +21,9 @@ namespace SerializarXml.ModelSerialization
 
             [XmlElement("dest")]
             public Destinatario Destinatario { get; set; }
+
+            [XmlElement("det")]
+            public List<Detalhe> Detalhe { get; set; }
         }
     }
 }
